@@ -8,7 +8,7 @@ import (
 
 func main() {
 	i := I{
-		message: Hello.Hello("First Tutorial App"),
+		message: Hello.Hello("This first tutorial"),
 	}
 	i.Message()
 }
