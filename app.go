@@ -7,11 +7,11 @@ import (
 )
 
 func main() {
+	Hello.Hello("Anton")
 	i := I{
 		message: "Hello First tutorial Golang",
 	}
 	i.Message()
-	Hello.Hello("Anton")
 }
 
 type M interface {
