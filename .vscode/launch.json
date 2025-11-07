@@ -1,29 +1,31 @@
 {
     "version": "0.2.0",
     "configurations": [
+        // --- Конфигурация 1: Запуск всего проекта ---
         {
-            "name": "Launch file",
+            "name": "Launch Full Project",
             "type": "go",
             "request": "launch",
-            "mode": "debug",
-            "program": "${file}"
+            "mode": "exec", // Используем режим exec для запуска собранного бинарника
+            // Указываем путь к бинарнику, созданному задачей "build project executable"
+            "program": "${workspaceFolder}/app_runner",
+            // Сначала запускаем нашу задачу сборки
+            "preLaunchTask": "build project executable",
+            "args": [] // Аргументы командной строки, если нужны
         },
+
+        // --- Конфигурация 2: Запуск активного файла ---
         {
-            "name": "Launch Package",
+            "name": "Launch Active File",
             "type": "go",
             "request": "launch",
             "mode": "auto",
+            // Запускает текущий открытый файл (если он package main)
             "program": "${fileDirname}",
-
-            "preLaunchTask": "build" 
-        }
-    ],
-    "inputs": [
-        {
-            "id": "appName",
-            "type": "promptString",
-            "description": "Enter the name for the output executable file:",
-            "default": "myprogram"
+            // Эта конфигурация тоже может использовать ту же задачу сборки, 
+            // если вы хотите гарантировать, что все зависимости актуальны.
+            // Если же вы хотите максимально быстрый запуск только текущего файла, можно убрать preLaunchTask.
+            "preLaunchTask": "build project executable" 
         }
     ]
 
