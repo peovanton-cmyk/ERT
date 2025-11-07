@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	i := I{"Hello First tutorial Golang"}
+	i := I{message: "Hello First tutorial Golang"}
 	i.Message()
 }
 
