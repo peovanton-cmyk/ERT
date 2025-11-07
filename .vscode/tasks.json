@@ -2,17 +2,18 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "go",
-			"label": "go: build workspace",
-			"command": "build",
-			"args": [
-				"./..."
-			],
-			"problemMatcher": [
-				"$go"
-			],
-			"group": "build",
-			"detail": "cd /workspaces/ERT; go build ./..."
-		}
+            "label": "build project executable",
+            "type": "shell",
+            // Команда go build собирает весь проект и помещает результат в корень workspace
+            "command": "go build -o ${workspaceFolder}/app_runner",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$go"
+        }
 	]
 }
