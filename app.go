@@ -8,7 +8,7 @@ import (
 
 func main() {
 	i := I{
-		message: "Hello First tutorial Golang",
+		message: Hello.Hello("First Tutorial App"),
 	}
 	i.Message()
 }
@@ -23,5 +23,4 @@ type I struct {
 
 func (i I) Message() {
 	fmt.Println(i.message)
-	Hello.Hello("Anton")
 }
