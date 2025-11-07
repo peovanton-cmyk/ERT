@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/peovanton-cmyk/ERT/Hello"
+
+	"fmt"
 )
 
 func main() {
