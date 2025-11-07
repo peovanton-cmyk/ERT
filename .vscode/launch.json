@@ -16,21 +16,7 @@
             "program": "${fileDirname}",
 
             "preLaunchTask": "build" 
-        },
-        {
-            "label": "build go program", // Метка, которую мы будем использовать в launch.json
-            "type": "shell",
-            "command": "go build -o ${workspaceFolder}/out/${input:appName} ${fileDirname}",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "reveal": "silent"
-            },
-            "problemMatcher": "$go"
         }
-        
     ],
     "inputs": [
         {
