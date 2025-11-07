@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/peovanton-cmyk/ERT/Hello"
 )
 
 func main() {
@@ -9,6 +11,7 @@ func main() {
 		message: "Hello First tutorial Golang",
 	}
 	i.Message()
+	Hello.Hello("Anton")
 }
 
 type M interface {
