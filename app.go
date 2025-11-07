@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	i := I{
+	//TODO #1 exchange type I not use parametr message use change in variable where I isset type
+	var i (I) = I{
 		message: Hello.Hello("This first tutorial"),
 	}
 	i.Message()
