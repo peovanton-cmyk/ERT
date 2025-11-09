@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/peovanton-cmyk/ERT/tree/main/Hello"
+	"github.com/peovanton-cmyk/ERT/Hello"
 
 	"fmt"
 )

@@ -1,3 +1,3 @@
-module github.com/peovanton-cmyk/ERT/tree/main/Hello
+module github.com/peovanton-cmyk/ERT/Hello
 
 go 1.24.5
