@@ -1,4 +1,4 @@
-package main
+package ERT
 
 import (
 	"github.com/peovanton-cmyk/ERT/First"
