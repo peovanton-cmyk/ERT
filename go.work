@@ -2,5 +2,5 @@ go 1.24.5
 
 use (
 	.
-	./Hello
+	github.com/peovanton-cmyk/ERT/tree/main/Hello
 )

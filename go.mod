@@ -1,3 +1,3 @@
-module github.com/peovanton-cmyk/ERT/Hello
+module .main
 
 go 1.24.5
