@@ -6,10 +6,12 @@ import (
 )
 
 type S struct {
+	F First.I
 }
 
 func main() {
-	First.I()
-	i.message = Hello.Hello("This first tutorial")
-	i.Message()
+	var s (S)
+	// s.F = First.I()
+	Hello.Hello("This first tutorial")
+	s.F.Message()
 }
