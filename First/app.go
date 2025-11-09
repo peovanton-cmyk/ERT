@@ -1,6 +1,16 @@
 package First
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/peovanton-cmyk/ERT/Hello"
+)
+
+func First() {
+	var i (I)
+	i.message = Hello.Hello("Education Right Tutorial")
+	i.Message()
+}
 
 type M interface {
 	Message()
