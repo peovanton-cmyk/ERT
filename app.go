@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	var i (I)
+	var i = First
 	i.message = Hello.Hello("This first tutorial")
 	i.Message()
 }
