@@ -1,18 +1,21 @@
 {
-  "name": "Go DevContainer",
-  // "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "image": "mcr.microsoft.com/devcontainers/go:latest",
-  "features": {
-    "ghcr.io/devcontainers/features/go:1": {
-    "version": "1.25.4"
-  }
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "golang.go"
-      ]
-    }
-  },
-  "postCreateCommand": "go mod tidy"
+    "name": "Go 1.25.4 Dev Container",
+    // Использует официальный образ Go с Docker Hub, 
+    // указывая конкретную версию и базовую ОС (например, Debian Trixie)
+    "image": "golang:1.25.4-trixie", 
+
+    // Настройки VS Code
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go" // Обязательное расширение для разработки на Go в VS Code
+            ]
+        }
+    },
+
+    // Маппинг портов для веб-приложений (если потребуется)
+    "forwardPorts": [8080],
+
+    // Команда для автоматической загрузки зависимостей после создания контейнера
+    "postCreateCommand": "go mod download"
 }
