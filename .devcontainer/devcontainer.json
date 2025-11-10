@@ -1,6 +1,6 @@
 {
   "name": "Go DevContainer",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  // "image": "mcr.microsoft.com/devcontainers/universal:2",
   "image": "mcr.microsoft.com/devcontainers/go:latest",
   "features": {
     "ghcr.io/devcontainers/features/go:1": {
